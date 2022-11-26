@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18189621, g: 0.22756475, b: 0.30737892, a: 1}
+  m_IndirectSpecularColor: {r: 0.18192679, g: 0.22761068, b: 0.30741414, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2129,6 +2129,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7565720691766389096, guid: 1ec1190b22a54f24693657572e49fc6b, type: 3}
   m_PrefabInstance: {fileID: 322630361}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &322630363 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8733960163376021593, guid: 1ec1190b22a54f24693657572e49fc6b, type: 3}
+  m_PrefabInstance: {fileID: 322630361}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &322630364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322630363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1001 &324106107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3927,6 +3952,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4464365696392425759, guid: b01d1511797f0e241b7859b0edd9908f, type: 3}
   m_PrefabInstance: {fileID: 745729194}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &745729196 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1978070768645098808, guid: b01d1511797f0e241b7859b0edd9908f, type: 3}
+  m_PrefabInstance: {fileID: 745729194}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &745729197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745729196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1001 &749110493
 PrefabInstance:
   m_ObjectHideFlags: 0

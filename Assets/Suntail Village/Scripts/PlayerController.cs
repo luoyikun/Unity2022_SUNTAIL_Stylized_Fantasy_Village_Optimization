@@ -172,6 +172,7 @@ namespace Suntail
             {
                 if (_groundHit.collider.GetComponent<Terrain>())
                 {
+                    //漫射纹理 (Diffuse Texture) 表示地形图层的基色纹理。漫射纹理的 Alpha 通道具有不同用途，这取决于用来渲染地形的活动可编程渲染管线和着色器。
                     _currentTexture = _terrainLayers[GetTerrainTexture(transform.position)].diffuseTexture;
                 }
                 if (_groundHit.collider.GetComponent<Renderer>())
@@ -197,6 +198,7 @@ namespace Suntail
         }
 
         //Return an array of textures depending on location of the controller on terrain
+        //根据控制器在地形上的位置返回一个纹理数组
         private float[] GetTerrainTexturesArray(Vector3 controllerPosition)
         {
             _terrain = Terrain.activeTerrain;
@@ -206,6 +208,7 @@ namespace Suntail
             int positionX = (int)(((controllerPosition.x - terrainPosition.x) / _terrainData.size.x) * _terrainData.alphamapWidth);
             int positionZ = (int)(((controllerPosition.z - terrainPosition.z) / _terrainData.size.z) * _terrainData.alphamapHeight);
 
+            //返回的数组是三维的,前两个维度代表x和y坐标,第三个是适用于透明贴图的splatmap纹理
             float[,,] layerData = _terrainData.GetAlphamaps(positionX, positionZ, 1, 1);
 
             float[] texturesArray = new float[layerData.GetUpperBound(2) + 1];

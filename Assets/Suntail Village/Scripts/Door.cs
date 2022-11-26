@@ -20,6 +20,7 @@ namespace Suntail
         [SerializeField] private float doorDelayTime;
         [HideInInspector] public bool doorOpen = false;
 
+        public OcclusionPortal m_occulusProtal;
         //Private variables.
         private Animator _doorAnimator;
         private AudioSource _doorAudioSource;
@@ -43,7 +44,7 @@ namespace Suntail
                 doorOpen = true;
                 _doorAudioSource.Play();
                 StartCoroutine(PauseInteraction());
-
+                SetOcclusionPortal(true);
             }
             else if (doorOpen && !_pauseInteraction)
             {
@@ -57,12 +58,20 @@ namespace Suntail
 
         }
 
+        void SetOcclusionPortal(bool isOpen)
+        {
+            if (m_occulusProtal != null)
+            {
+                m_occulusProtal.open = isOpen;
+            }
+        }
         //Waiting for door open time, to prevent the door from opening/closing again
         private IEnumerator PauseInteraction()
         {
             _pauseInteraction = true;
             yield return new WaitForSeconds(_doorOpenTime);
             _pauseInteraction = false;
+            SetOcclusionPortal(false);
         }
 
     }

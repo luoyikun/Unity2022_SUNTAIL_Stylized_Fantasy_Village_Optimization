@@ -354,10 +354,10 @@ namespace UnityEngine.Rendering.Universal
                     Render(cmd, m_SSAOTexture1Target, ShaderPasses.AO);
 
                     // Execute the Blur Passes
-                    RenderAndSetBaseMap(cmd, m_SSAOTexture1Target, m_SSAOTexture2Target, ShaderPasses.BlurHorizontal);
+                    //RenderAndSetBaseMap(cmd, m_SSAOTexture1Target, m_SSAOTexture2Target, ShaderPasses.BlurHorizontal);
 
-                    PostProcessUtils.SetSourceSize(cmd, m_BlurPassesDescriptor);
-                    RenderAndSetBaseMap(cmd, m_SSAOTexture2Target, m_SSAOTexture3Target, ShaderPasses.BlurVertical);
+                    //PostProcessUtils.SetSourceSize(cmd, m_BlurPassesDescriptor);
+                    //RenderAndSetBaseMap(cmd, m_SSAOTexture2Target, m_SSAOTexture3Target, ShaderPasses.BlurVertical);
                     RenderAndSetBaseMap(cmd, m_SSAOTexture3Target, m_SSAOTextureFinalTarget, ShaderPasses.BlurFinal);
 
                     // Set the global SSAO texture and AO Params
